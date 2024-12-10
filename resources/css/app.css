@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.footer-useful-links a{
+    @apply hover:text-primary-100 hover:underline;
+}
+
+.footer-heading{
+    @apply text-2xl mb-4 font-semibold;
+}
+
+.text-content p {
+    @apply my-2;
+}
+
+.section-divider {
+    @apply w-[48px] h-[3px] rounded bg-secondary-100 flex justify-center my-3 mx-auto;
+}
+
+.header .pages-link{
+    @apply text-sm sm:flex sm:justify-center;
+}
+
+.header .pages-link li{
+    @apply sm:inline-block block sm:mx-2 mx-0 my-2 sm:my-0;
+}
+
+.header .pages-link li a{
+    @apply inline-block hover:border-b-2 hover:border-white transition-all duration-200 ease-in-out pb-1;
+}
