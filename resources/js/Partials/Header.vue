@@ -39,7 +39,7 @@ const props = defineProps({
               <ul class="pages-link">
                 <li><Link :href="route('home_page')">Home</Link></li>
                 <li><Link :href="route('about_us')">About Us</Link></li>
-                <li><Link href="#">Our Team</Link></li>
+                <li><Link :href="route('team')">Our Team</Link></li>
                 <li><Link :href="route('projects')">Projects</Link></li>
                 <li><Link :href="route('contact_us')">Contact Us</Link></li>
               </ul>

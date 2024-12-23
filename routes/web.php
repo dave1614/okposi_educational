@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\PublicController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -20,6 +21,7 @@ Route::get('/', [PublicController::class, 'homePage'])->name('home_page');
 Route::get('/about_us', [PublicController::class, 'aboutUs'])->name('about_us');
 Route::get('/contact_us', [PublicController::class, 'contactUs'])->name('contact_us');
 Route::get('/projects', [PublicController::class, 'projects'])->name('projects');
+Route::get('/team', [TeamController::class, 'index'])->name('team');
 
 Route::get('/project/{project}', [ProjectController::class, 'show'])->name('projects.show');
 
